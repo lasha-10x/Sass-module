@@ -1,0 +1,91 @@
+@import "mixin";
+@import "variables";
+@import "extends";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $main-color;
+  padding: 1rem;
+
+  .game-container {
+    @include flex($justify: flex-start, $align: stretch, $direction: column);
+    gap: 2rem;
+    width: 100%;
+
+    .top-bar {
+      @include flex($justify: space-between, $align: center, $direction: row);
+      gap: 1rem;
+
+      .reset-btn {
+        @extend %button-style;
+      }
+
+      .range-info {
+        color: $font-color;
+        font-size: 1.2rem;
+      }
+    }
+
+    .title {
+      color: $font-color;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .display-section {
+      position: relative;
+      @include flex($justify: center, $align: center, $direction: column);
+      gap: 2rem;
+
+      .divider-line {
+        background-color: $font-color;
+        height: 10px;
+        width: 100vw;
+        position: absolute;
+      }
+
+      .number-box {
+        @extend %number-box-style;
+        @include flex($justify: center, $align: center, $direction: row);
+      }
+    }
+
+    .game-interaction {
+      @include flex($justify: space-evenly, $align: flex-start,$direction: row);
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      .input-section {
+        @include flex($justify: flex-start,  $align: stretch, $direction: column);
+        gap: 0.5rem;
+        max-width: 300px;
+
+        .number-input {
+          @extend %input-style;
+        }
+
+        .check-btn {
+          @extend %button-style;
+          align-self: center;
+        }
+      }
+
+      .score-section {
+        max-width: 300px;
+
+        .message,
+        .score-label,
+        .highscore-label {
+          color: $font-color;
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

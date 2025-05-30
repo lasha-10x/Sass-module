@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Press-start";
+  src: url(./assets/fonts/Press_Start_2P/PressStart2P-Regular.ttf)
+    format("woff2");
+}
+
+@mixin displaycenter($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+$white: rgb(236, 236, 236);
+$black: #000;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Press-start";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(30, 30, 30);
+}
+
+.main_container {
+  width: 100vw;
+  height: 100vh;
+  // overflow: hidden;
+  header {
+    @include displaycenter(space-between, center);
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    #again {
+      width: clamp(120px, 30vw, 140px);
+      height: 45px;
+      background-color: $white;
+      color: $black;
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      font-weight: bold;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    .beyween_number {
+      color: $white;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+  }
+  .guess_number {
+    width: 100%;
+    text-align: center;
+    h1 {
+      font-size: clamp(1.4rem, 5vw, 3rem);
+      color: $white;
+      margin-top: clamp(15px, 5vw, 40px);
+    }
+    .number_container {
+      @include displaycenter(center, center);
+      position: relative;
+      width: 100%;
+      margin-top: 130px;
+      .line {
+        width: 100%;
+        height: 3px;
+        background-color: $white;
+      }
+      #number {
+        @include displaycenter(center, center);
+        position: absolute;
+        width: 150px;
+        height: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $white;
+        color: $black;
+        font-size: 3rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .playing_container {
+    @include displaycenter(center, center);
+    width: 100%;
+    margin-top: clamp(100px, 20vw, 200px);
+    .check_container {
+      @include displaycenter(center, center);
+      flex-direction: column;
+      width: 50%;
+      input {
+        width: 200px;
+        height: 100px;
+        background: transparent;
+        border: 2px solid $white;
+        color: $white;
+        font-size: 1.2rem;
+        text-align: center;
+        outline: none;
+      }
+      #check_number_btn {
+        width: 130px;
+        height: 40px;
+        margin-top: 30px;
+        font-size: 0.9rem;
+        cursor: pointer;
+      }
+    }
+    .score_container {
+      @include displaycenter(center, center);
+      flex-direction: column;
+      width: 50%;
+      color: $white;
+      #start_guessing {
+        font-size: 1rem;
+        margin-bottom: 40px;
+      }
+      .scores {
+        @include displaycenter(center, flex-start);
+        flex-direction: column;
+        margin-right: 27px;
+        .score {
+          @include displaycenter(center, center);
+          gap: 20px;
+        }
+        .hight_score {
+          @include displaycenter(center, center);
+          gap: 20px;
+          margin: 30px 0px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main_container {
+    .playing_container {
+      flex-direction: column;
+      .check_container {
+        width: 100%;
+        input {
+          width: 100%;
+        }
+      }
+      .score_container{
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+  }
+}

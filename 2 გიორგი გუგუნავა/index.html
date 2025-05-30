@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <header>
+        <button id="again">Again!</button>
+        <p class="beyween_number">Between 1 and 20</p>
+      </header>
+      <div class="guess_number">
+        <h1>Guess My Number!</h1>
+        <div class="number_container">
+          <div class="line"></div>
+          <div id="number">?</div>
+        </div>
+      </div>
+      <div class="playing_container">
+        <div class="check_container">
+          <input type="number" name="Check" id="check_number" />
+          <button id="check_number_btn">Check!</button>
+        </div>
+        <div class="score_container">
+          <p id="start_guessing">Start guessing...</p>
+          <div class="scores">
+            <div class="score">
+              <p class="score_icon">💯</p>
+              <p class="score_text">Score:</p>
+              <p id="score_number"></p>
+            </div>
+            <div class="hight_score">
+              <p class="hight_score_icon">🥇</p>
+              <p class="hight_score_text">Hightscore:</p>
+              <p id="hight_score_number"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

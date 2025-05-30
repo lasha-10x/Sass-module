@@ -1,0 +1,110 @@
+body .game-container .game-interaction .input-section .number-input {
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  padding: 0 0.5rem;
+}
+
+body .game-container .game-interaction .input-section .check-btn, body .game-container .top-bar .reset-btn {
+  max-width: 200px;
+  font-size: 1.5rem;
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+body .game-container .display-section .number-box {
+  color: black;
+  border: 1px solid black;
+  width: clamp(80px, 20vw, 160px);
+  font-size: clamp(40px, 8vw, 130px);
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  padding: 1rem;
+}
+body .game-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+body .game-container .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+body .game-container .top-bar .range-info {
+  color: white;
+  font-size: 1.2rem;
+}
+body .game-container .title {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+body .game-container .display-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+body .game-container .display-section .divider-line {
+  background-color: white;
+  height: 10px;
+  width: 100vw;
+  position: absolute;
+}
+body .game-container .display-section .number-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body .game-container .game-interaction {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+body .game-container .game-interaction .input-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 300px;
+}
+body .game-container .game-interaction .input-section .check-btn {
+  align-self: center;
+}
+body .game-container .game-interaction .score-section {
+  max-width: 300px;
+}
+body .game-container .game-interaction .score-section .message,
+body .game-container .game-interaction .score-section .score-label,
+body .game-container .game-interaction .score-section .highscore-label {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=style.css.map */
