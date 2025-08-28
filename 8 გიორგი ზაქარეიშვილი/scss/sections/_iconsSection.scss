@@ -1,0 +1,40 @@
+
+
+.iconesSection{
+    @include centrDisplay();
+    font-family: "Sora", sans-serif;
+    margin-top: 60px;
+}    
+    
+.icons{
+    @include centrDisplay();
+    max-width: 1220px;
+    width: 100%;
+}
+
+.iconLinks{
+    @include centrDisplay();
+    cursor:pointer;
+    flex-direction: column;
+    width:180px;
+    background-color: $gray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 32px 32px 32px 32px;
+    margin-left: 12px;
+    img{
+        width: 80px;
+        margin-bottom: 30px;
+
+    }
+    a{
+        text-decoration: none;
+        color: $darkBlue;
+        font-weight: 500;
+        
+    }
+ }
+ .iconLinks:hover{
+    background-color: white;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.08);
+ }

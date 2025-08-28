@@ -1,0 +1,60 @@
+
+
+
+
+
+
+.productsQuantity{
+    font-family: "Sora", sans-serif;
+    @include centrDisplay();
+    margin-top: 100px;
+}
+.searchFor{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    max-width: 610px;
+    width: 100%;
+
+    h6{
+        @extend %fontStyle_h6;
+        color: $darkBlue;
+    }
+    h2{
+        @extend %fontStyle_h2;
+        color: $yellow;
+        margin-bottom: 5px;
+    }
+    span{
+        @extend %fontStyle_h2;
+        color: $darkBlue;
+    }
+}
+.twoYellowLines{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+    max-width: 610px;
+    height: 96px;
+    width: 100%;
+    
+
+    .yellowLine{
+       @extend %yelowLineStyle;
+    }
+
+    .descTitle{
+        h4{
+            margin: 0;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+            color: $darkBlue;
+        }
+        h3{
+            @extend %fontStyle_h3;
+            color: #5c676d;
+        }
+    }
+}

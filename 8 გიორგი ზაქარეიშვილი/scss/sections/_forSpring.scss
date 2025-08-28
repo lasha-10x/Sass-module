@@ -1,0 +1,46 @@
+
+.forSpring{
+    @include centrDisplay();
+    font-family: "Sora", sans-serif;
+    margin-top: 100px;
+}
+.imgWrapper{
+    margin-right: 73px;
+}
+.getReady{
+    h6{
+        @extend %fontStyle_h6;
+        color: $darkBlue;
+        
+    }
+    h2{
+        @extend %fontStyle_h2;
+        color: $darkBlue;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    h3{
+        @extend %fontStyle_h3;
+        color: #5c676d;
+        margin-bottom: 30px;
+    }
+    .actualTrends{
+        @include centrDisplay();
+        background-color:$yellow;
+        width: 192px;
+        height: 43px;
+        border-radius: 45px;
+            a{
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 600;
+            padding: 15px 35px 15px 35px;
+            }    
+    }
+    .actualTrends:hover{
+        background-color: $darkBlue;
+    }
+ 
+}

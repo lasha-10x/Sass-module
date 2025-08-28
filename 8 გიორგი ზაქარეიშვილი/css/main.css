@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.searchFor h6, .layer .background .layerWrapper h6, .getReady h6 {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.searchFor span, .searchFor h2, .getReady h2, .cards .kitchenCard h2, .cards .officeCard h2, .cards .bedroomCard h2 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 700;
+}
+
+.headerTop .search input::-moz-placeholder {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.twoYellowLines .descTitle h3, .getReady h3, .headerTop .search input::placeholder, .headerTop .search input, .cards .kitchenCard h3, .cards .officeCard h3, .cards .bedroomCard h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.twoYellowLines .yellowLine, .cards .kitchenCard .yellowLine, .cards .officeCard .yellowLine, .cards .bedroomCard .yellowLine {
+  width: 22px;
+  height: 7px;
+  background-color: #FFB128;
+  margin-right: 25px;
+  margin-left: 40px;
+  border-radius: 4px;
+}
+
+.layer .background .layerWrapper .circleBottom img:hover, .layer .background .layerWrapper .circleLeft img:hover, .layer .background .layerWrapper .circleRight img:hover {
+  width: 80px;
+  cursor: pointer;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+.cards .kitchenCard, .cards .officeCard, .cards .bedroomCard {
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  border-radius: 32px;
+  margin-left: 30px;
+  margin-top: 100px;
+}
+.cards .kitchenCard h3, .cards .officeCard h3, .cards .bedroomCard h3 {
+  color: white;
+  margin-top: 404px;
+  margin-left: 40px;
+}
+.cards .kitchenCard h2, .cards .officeCard h2, .cards .bedroomCard h2 {
+  color: white;
+  margin: 20px 0 20px 40px;
+  cursor: pointer;
+}
+.cards .kitchenCard h2:hover, .cards .officeCard h2:hover, .cards .bedroomCard h2:hover {
+  margin-top: 15px;
+}
+.cards .kitchenCard .yellowLine, .cards .officeCard .yellowLine, .cards .bedroomCard .yellowLine {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #0B3954;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  top: 0;
+  background-color: white;
+  width: 100%;
+  height: 160px;
+  box-shadow: 0px 1px #F9F9F9;
+  z-index: 1;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1220px;
+  width: 100%;
+  margin-top: 30px;
+}
+.headerTop .logoFurniture {
+  margin-right: 55px;
+}
+.headerTop .logoFurniture img {
+  max-width: 240px;
+  height: 43px;
+}
+.headerTop .search {
+  width: 610px;
+  height: 45px;
+  margin: 0 66px;
+  position: relative;
+}
+.headerTop .search img {
+  position: absolute;
+  left: 14px;
+  padding-top: 14px;
+}
+.headerTop .search input {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: #F9F9F9;
+  color: #0B3954;
+}
+.headerTop .search input::-moz-placeholder {
+  color: #0B3954;
+}
+.headerTop .search input::placeholder {
+  color: #0B3954;
+}
+.headerTop .loginSymbols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 178px;
+  height: 24px;
+}
+.headerTop .loginSymbols .zero {
+  display: inline-block;
+  position: absolute;
+  top: -9px;
+  font-size: 11px;
+  line-height: 1;
+  background-color: #333;
+  color: white;
+  min-width: 18px;
+  text-align: center;
+  border-radius: 18px;
+  padding: 3px;
+}
+.headerTop .loginSymbols .zeroPoint {
+  font-weight: 600;
+}
+
+.headerBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1220px;
+  width: 100%;
+  height: 80px;
+}
+
+.headerMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.headerMenu img {
+  width: 32px;
+  height: 32px;
+  margin-top: 12px;
+}
+.headerMenu a {
+  text-decoration: none;
+  color: #0B3954;
+  font-weight: 500;
+}
+.headerMenu a img {
+  width: 12px;
+  height: 13px;
+  margin-left: 10px;
+}
+.headerMenu a:hover {
+  color: #FFB128;
+}
+
+.sales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFB128;
+  flex-direction: column;
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  height: 100%;
+}
+.sales img {
+  width: 23px;
+  height: 20px;
+  margin-top: 15px;
+}
+.sales p {
+  color: white;
+  font-weight: 400;
+}
+
+.sales:hover {
+  background-color: #0B3954;
+}
+
+.forSpring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Sora", sans-serif;
+  margin-top: 100px;
+}
+
+.imgWrapper {
+  margin-right: 73px;
+}
+
+.getReady h6 {
+  color: #0B3954;
+}
+.getReady h2 {
+  color: #0B3954;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.getReady h3 {
+  color: #5c676d;
+  margin-bottom: 30px;
+}
+.getReady .actualTrends {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFB128;
+  width: 192px;
+  height: 43px;
+  border-radius: 45px;
+}
+.getReady .actualTrends a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  padding: 15px 35px 15px 35px;
+}
+.getReady .actualTrends:hover {
+  background-color: #0B3954;
+}
+
+.iconesSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Sora", sans-serif;
+  margin-top: 60px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1220px;
+  width: 100%;
+}
+
+.iconLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: column;
+  width: 180px;
+  background-color: #F9F9F9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 32px 32px 32px 32px;
+  margin-left: 12px;
+}
+.iconLinks img {
+  width: 80px;
+  margin-bottom: 30px;
+}
+.iconLinks a {
+  text-decoration: none;
+  color: #0B3954;
+  font-weight: 500;
+}
+
+.iconLinks:hover {
+  background-color: white;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.08);
+}
+
+.layer {
+  font-family: "Poppins", sans-serif;
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9F9F9;
+}
+.layer .background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1720px;
+  height: 670px;
+  width: 100%;
+  border-radius: 32px;
+  background-color: #0B3954;
+  margin: 30px 96px 0 96px;
+}
+.layer .background .layerWrapper {
+  background-image: url(/img/imgLayer/layerWrapper.png);
+  position: relative;
+  width: 1178px;
+  height: 670px;
+  margin-top: 75px;
+}
+.layer .background .layerWrapper .circleBottom, .layer .background .layerWrapper .circleLeft, .layer .background .layerWrapper .circleRight {
+  position: absolute;
+}
+.layer .background .layerWrapper .circleBottom {
+  left: 811px;
+  top: 278px;
+}
+.layer .background .layerWrapper .circleLeft {
+  left: 504px;
+  top: 475px;
+}
+.layer .background .layerWrapper .circleRight {
+  left: 984px;
+  top: 436px;
+}
+.layer .background .layerWrapper h6 {
+  color: white;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.layer .background .layerWrapper h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 64px;
+  color: white;
+  margin-left: 50px;
+  margin-top: -20px;
+}
+.layer .background .layerWrapper .buttons {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+}
+.layer .background .layerWrapper .buttons .getToShop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFB128;
+  width: 152px;
+  height: 43px;
+  border-radius: 45px;
+  margin-right: 28px;
+}
+.layer .background .layerWrapper .buttons .getToShop a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.layer .background .layerWrapper .buttons .getToShop:hover {
+  background-color: white;
+}
+.layer .background .layerWrapper .buttons .getToShop:hover a:hover {
+  color: #FFB128;
+}
+.layer .background .layerWrapper .buttons .seeColection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 185px;
+  height: 43px;
+  border-radius: 45px;
+}
+.layer .background .layerWrapper .buttons .seeColection a {
+  text-decoration: none;
+  color: #FFB128;
+  font-weight: 600;
+}
+.layer .background .layerWrapper .buttons .seeColection:hover {
+  background-color: #FFB128;
+}
+.layer .background .layerWrapper .buttons .seeColection:hover a:hover {
+  color: white;
+}
+
+.productsQuantity {
+  font-family: "Sora", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.searchFor {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  max-width: 610px;
+  width: 100%;
+}
+.searchFor h6 {
+  color: #0B3954;
+}
+.searchFor h2 {
+  color: #FFB128;
+  margin-bottom: 5px;
+}
+.searchFor span {
+  color: #0B3954;
+}
+
+.twoYellowLines {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  max-width: 610px;
+  height: 96px;
+  width: 100%;
+}
+.twoYellowLines .descTitle h4 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #0B3954;
+}
+.twoYellowLines .descTitle h3 {
+  color: #5c676d;
+}
+
+.threeCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.cards .bedroomCard {
+  background-image: url(/img/imgCards/bedroomCard.png);
+}
+.cards .officeCard {
+  background-image: url(/img/imgCards/officeCard.png);
+}
+.cards .kitchenCard {
+  background-image: url(/img/imgCards/kitchenCard.png);
+}/*# sourceMappingURL=main.css.map */

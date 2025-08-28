@@ -1,0 +1,109 @@
+
+
+
+
+
+
+.layer{
+    font-family: "Poppins", sans-serif;
+    margin-top: 160px;
+    @include centrDisplay();
+    background-color:$gray;
+    .background{
+        @include centrDisplay();
+        
+        width: 1720px;
+        height: 670px;
+        width: 100%;
+        border-radius: 32px;
+        background-color: $darkBlue;
+        margin:30px 96px 0 96px;
+        
+
+        .layerWrapper{
+            background-image: url(/img/imgLayer/layerWrapper.png);
+            position: relative;
+            width: 1178px;
+            height: 670px;
+            margin-top: 75px;
+            .circleBottom, .circleLeft, .circleRight{
+                position: absolute;
+                img:hover{
+                    @extend %circleHover;
+                }
+            }
+            .circleBottom{
+                left: 811px;
+                top: 278px;
+            }
+            
+            .circleLeft{
+                left: 504px;
+                top: 475px;
+            }
+            .circleRight{
+                left: 984px;
+                top: 436px;
+            }
+
+            h6{
+                @extend %fontStyle_h6;
+                color: white;
+                margin-left: 50px;
+                margin-top: 50px;
+            }
+            h1{
+                margin: 0;
+                font-weight:700;
+                font-size: 64px;
+                color: white;
+                margin-left: 50px;
+                margin-top: -20px;
+            }
+            .buttons{
+                display: flex;
+                flex-direction: row;
+                margin-left: 50px;
+                 .getToShop{
+                    @include centrDisplay();
+                    background-color:$yellow;
+                    width: 152px;
+                    height: 43px;
+                    border-radius: 45px;
+                    margin-right: 28px;
+                        a{
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 600; 
+                        }    
+                }
+                .getToShop:hover{
+                    background-color: white;
+                    a:hover{
+                        color: $yellow;
+                    }
+                }
+                .seeColection{
+                    @include centrDisplay();
+                    background-color: white;
+                    width: 185px;
+                    height: 43px;
+                    border-radius: 45px;
+                        a{
+                        text-decoration: none;
+                        color: $yellow; 
+                        font-weight: 600; 
+                        }  
+                }
+                .seeColection:hover{
+                    background-color: $yellow;
+                    a:hover{
+                        color: white;
+                    }
+                }
+            }
+           
+        }
+    }
+}
+
