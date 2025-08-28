@@ -1,0 +1,1 @@
+@use '../abstracts/mixins' as *;@use '../abstracts/functions' as *;.price-card{@include card(1.25rem);display:grid;gap:.6rem}.price-card__price strong{font-size:1.5rem}.price-card__features{color:theme(muted);display:grid;gap:.35rem}

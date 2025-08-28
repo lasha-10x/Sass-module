@@ -1,0 +1,1 @@
+@use '../abstracts/functions' as *;.marquee{overflow:hidden;border:1px solid theme(border);border-radius:14px;background:theme(bg)}.marquee__track{display:flex;gap:2rem;padding:.7rem 1rem;animation:marquee 28s linear infinite;width:max-content}.logo-pill{display:inline-block;width:140px;height:28px;border-radius:999px;background:theme(border)}

@@ -1,0 +1,6 @@
+
+@use 'sass:map';@use 'sass:math';
+@function rem($px){@return math.div($px,16)*1rem;}
+@function theme($key){@return var(--#{$key});}
+@function get($map,$key){@return map.get($map,$key);}
+@function z($name){@return get($z,$name);}

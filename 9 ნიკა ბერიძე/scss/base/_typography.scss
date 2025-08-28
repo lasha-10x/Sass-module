@@ -1,0 +1,1 @@
+@use '../abstracts/functions' as *;@use 'sass:map';h1,h2,h3,h4{color:theme(ink);line-height:1.15}h1{font-size:map.get($type,h1);@extend %heading}h2{font-size:map.get($type,h2);@extend %heading;margin-bottom:.5rem}h3{font-size:1.75rem;font-weight:800}h4{font-size:1.35rem;font-weight:700}

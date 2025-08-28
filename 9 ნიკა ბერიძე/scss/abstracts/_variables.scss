@@ -1,0 +1,9 @@
+
+$palette-light:(primary:#635bff,primary-600:#4f46e5,primary-700:#4338ca,ink:#0a2540,text:#0b2338,muted:#425466,border:#d5dbe7,bg:#fff,bg-alt:#f6f9fc,surface:#eef2f7,success:#16a34a,warning:#f59e0b,danger:#dc2626);
+$palette-dark:(primary:#8b87ff,primary-600:#7c7af7,primary-700:#6f6cee,ink:#e6edf7,text:#e2e8f0,muted:#a6b3c4,border:#273143,bg:#0b1220,bg-alt:#0f172a,surface:#0c1222,success:#22c55e,warning:#fbbf24,danger:#ef4444);
+$space:(0:0,1:.25rem,2:.5rem,3:.75rem,4:1rem,5:1.5rem,6:2rem,7:3rem,8:4rem,9:6rem);
+$radius:(sm:6px,md:10px,lg:14px,xl:22px,pill:999px);
+$elev:(sm:0 1px 2px rgba(0,0,0,.06),md:0 6px 16px rgba(0,0,0,.12),lg:0 18px 60px rgba(0,0,0,.18));
+$bp:(md:768px);
+$type:(base:16,h1:clamp(2.2rem,1.2rem + 3.5vw,3.6rem),h2:clamp(1.9rem,1.2rem + 2vw,2.6rem),h3:1.75rem,h4:1.35rem);
+$z:(base:1,header:100,overlay:1000);

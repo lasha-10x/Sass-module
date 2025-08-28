@@ -1,0 +1,15 @@
+
+@use '../abstracts/functions' as *;@use '../abstracts/mixins' as *;@use 'sass:map';
+:root{@each $k,$v in $palette-light{--#{$k}:#{$v};}}
+[data-theme='dark']{@each $k,$v in $palette-dark{--#{$k}:#{$v};}color-scheme:dark;}
+html{font-size:map.get($type,base)*1px}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:theme(text);background:radial-gradient(1000px 600px at 50% -10%,rgba(99,91,255,.12),transparent),theme(bg);line-height:1.6}
+.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:.5rem;top:.5rem;background:theme(primary);color:#fff;padding:.4rem .6rem;border-radius:.5rem}
+.container{@include container}
+.section{padding-block:4rem}@include mq(md){.section{padding-block:6rem}}
+.surface{background:theme(bg-alt)}.center{text-align:center}.lead{color:theme(muted);font-size:1.125rem;margin-top:.5rem}
+.text-gradient{background:linear-gradient(90deg,theme(primary),var(--primary-700));-webkit-background-clip:text;background-clip:text;color:transparent}
+.link-arrow{color:theme(primary);font-weight:600;display:inline-flex;align-items:center;gap:.45rem}.link-arrow::after{content:'↗';transition:transform .2s}.link-arrow:hover::after{transform:translateY(-1px)}
+.code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace;font-size:.92rem;background:theme(bg-alt);color:theme(ink);border:1px solid theme(border);border-radius:12px;overflow:auto}
+.code--striped{background:repeating-linear-gradient(180deg,rgba(99,91,255,.08) 0,rgba(99,91,255,.08) 24px,transparent 24px,transparent 48px),theme(bg-alt)}
+.code code{display:block;padding:1rem 1.25rem}

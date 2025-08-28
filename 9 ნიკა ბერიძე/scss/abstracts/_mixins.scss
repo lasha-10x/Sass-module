@@ -1,0 +1,7 @@
+
+@use 'sass:map';
+@mixin mq($from){@media (min-width:map.get($bp,$from)){@content;}}
+@mixin container{width:min(1140px,92%);margin-inline:auto;}
+@mixin button($variant:'ghost'){display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:999px;padding:.65rem 1rem;font-weight:700;transition:.2s;border:1px solid theme(border);background:transparent;color:theme(ink);&:hover{background:theme(bg-alt);} @if $variant=='primary'{background:theme(primary);color:#fff;border-color:transparent;box-shadow:0 10px 30px rgba(99,91,255,.45);&:hover{filter:brightness(.96);} } @else if $variant=='chip'{background:theme(bg);}}
+@mixin card($pad:1rem){background:theme(bg);border:1px solid theme(border);border-radius:map.get($radius,lg);box-shadow:map.get($elev,md);padding:$pad;}
+@mixin glass{background:rgba(255,255,255,.65);backdrop-filter:saturate(180%) blur(10px);[data-theme='dark'] &{background:rgba(10,18,32,.65);}}

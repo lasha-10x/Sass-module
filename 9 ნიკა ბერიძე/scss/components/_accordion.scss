@@ -1,0 +1,1 @@
+@use '../abstracts/functions' as *;.accordion__item{border:1px solid theme(border);border-radius:12px;background:theme(bg);padding:.25rem .75rem}.accordion__item+.accordion__item{margin-top:.75rem}.accordion__item summary{cursor:pointer;padding:.6rem 0;font-weight:700;color:theme(ink)}.accordion__panel{padding-bottom:.6rem;color:theme(muted)}

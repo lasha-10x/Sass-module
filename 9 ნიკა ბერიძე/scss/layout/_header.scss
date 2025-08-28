@@ -1,0 +1,15 @@
+
+@use '../abstracts/functions' as *;@use '../abstracts/mixins' as *;
+.site-header{position:sticky;top:0;z-index:100;border-bottom:1px solid theme(border);@include glass}
+.header__inner{display:flex;align-items:center;gap:1rem;justify-content:space-between;padding-block:.6rem}
+.brand{display:inline-flex;align-items:center;gap:.5rem;color:theme(ink);font-weight:800;letter-spacing:-.01em}
+.badge{font-size:.75rem;padding:.2rem .5rem;border-radius:999px;background:theme(bg-alt);border:1px solid theme(border);color:theme(muted)}
+.icon-btn{display:inline-flex;align-items:center;gap:.4rem;border:1px solid theme(border);background:theme(bg);padding:.45rem .6rem;border-radius:10px}
+.key{border:1px solid theme(border);border-radius:6px;padding:.1rem .3rem;font-size:.75rem;color:theme(muted)}
+.hide-sm{display:none}@include mq(md){.hide-sm{display:inline}}
+.nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;border:1px solid theme(border);background:theme(bg)}@include mq(md){.nav-toggle{display:none}}
+.nav{position:fixed;inset:64px 1rem auto 1rem;background:theme(bg);border:1px solid theme(border);border-radius:12px;padding:1rem;transform:translateY(-8px);opacity:0;pointer-events:none;transition:.18s}@include mq(md){.nav{position:static;transform:none;opacity:1;pointer-events:auto;background:transparent;border:0;padding:0;display:flex;align-items:center;gap:1rem}}
+.nav.is-open{transform:translateY(0);opacity:1;pointer-events:auto}
+.nav__list{list-style:none;padding:0;margin:0 0 .75rem;display:grid;gap:.5rem}@include mq(md){.nav__list{display:flex;margin:0;gap:1rem}}
+.nav__list a{color:theme(muted);font-weight:600}.nav__list a:hover{color:theme(ink)}
+.nav__actions{display:flex;gap:.5rem;align-items:center}
