@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>BeFurnitureStore</title>
+    <link rel="website icon" href="./imgs/title.png" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-wrap">
+          <div class="logoandsearch">
+            <div class="logo">
+              <img
+                id="logo"
+                onclick="backMainPageByLogo()"
+                src="./imgs/logo.svg"
+                alt="logo"
+              />
+            </div>
+            <div class="searchInput">
+              <img src="./imgs/searchSymbol.svg" alt="search icon" />
+              <input type="search" placeholder="What are you looking for?" />
+            </div>
+          </div>
+
+          <div class="user-statuses">
+            <div class="cart">
+              <img src="./imgs/cart.jpg" width="30px" height="30px" />
+            </div>
+            <div class="ballance">$0.00</div>
+            <div class="whishlist">
+              <img src="./imgs/wishlist.svg" />
+            </div>
+            <div class="user">
+              <img id="user" src="./imgs/user.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden-login-container">
+          <div class="login-header">
+            <h6>Login</h6>
+          </div>
+          <input type="text" placeholder="Username or email" />
+          <input type="password" placeholder="Password" />
+
+          <div class="btnandp">
+            <button>Login</button>
+            <p>Lost your password?</p>
+          </div>
+        </div>
+        <!-- <div class="hidden-side-cart-container">
+          <div class="heading">
+            <div class="cross">x</div>
+            <h5>Cart</h5>
+          </div>
+          <div class="centr-txt">
+            <p>Your cart is currently empty.</p>
+          </div>
+          <div class="total-section">
+            <div class="total-wrap">
+              <div class="subtotal">
+                <p>Subtotal:</p>
+                <p>$0.00</p>
+                <div class="total">
+                  <p>Total:</p>
+                  <p class="big">$0.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </header>
+    <nav>
+      <div class="second-container">
+        <ul>
+          <li class="nav-item">
+            <a href="#">
+              <img src="./imgs/chair.svg" alt="chair" />
+              <span
+                >CHAIRS
+                <svg
+                  width="12"
+                  height="13"
+                  viewBox="0 0 12 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.1338 5.41711L11.6924 5.97571C11.9209 6.22961 11.9209 6.61047 11.6924 6.83899L6.76663 11.7648C6.51273 12.0187 6.13187 12.0187 5.90335 11.7648L0.952179 6.83899C0.723663 6.61047 0.723663 6.20422 0.952179 5.97571L1.51077 5.41711C1.76468 5.16321 2.14554 5.1886 2.39944 5.41711L5.31937 8.48938V1.17688C5.31937 0.846802 5.57327 0.567505 5.92874 0.567505H6.74124C7.07132 0.567505 7.35062 0.846802 7.35062 1.17688V8.48938L10.2451 5.41711C10.4991 5.1886 10.8799 5.16321 11.1338 5.41711Z"
+                    fill="#0B3954"
+                  />
+                </svg>
+              </span>
+            </a>
+            <div class="dropdown">
+              <div class="links">
+                <ul>
+                  <li>
+                    <a href="#"> ARMCHAIRS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="description">
+                <h4>WE RECOMMEND</h4>
+                <div class="wrap">
+                  <p>Fancy chair</p>
+                  Fancy chair Rutrum non id sem turpis elementum vel id. Magna.
+                </div>
+                <p>$1550.00</p>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="./imgs/bed.svg.svg" alt="beds" />
+              <span
+                >BEDS
+                <svg
+                  width="12"
+                  height="13"
+                  viewBox="0 0 12 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.1338 5.41711L11.6924 5.97571C11.9209 6.22961 11.9209 6.61047 11.6924 6.83899L6.76663 11.7648C6.51273 12.0187 6.13187 12.0187 5.90335 11.7648L0.952179 6.83899C0.723663 6.61047 0.723663 6.20422 0.952179 5.97571L1.51077 5.41711C1.76468 5.16321 2.14554 5.1886 2.39944 5.41711L5.31937 8.48938V1.17688C5.31937 0.846802 5.57327 0.567505 5.92874 0.567505H6.74124C7.07132 0.567505 7.35062 0.846802 7.35062 1.17688V8.48938L10.2451 5.41711C10.4991 5.1886 10.8799 5.16321 11.1338 5.41711Z"
+                    fill="#0B3954"
+                  />
+                </svg>
+              </span>
+            </a>
+
+            <div class="dropdown">
+              <div class="links">
+                <ul>
+                  <li>
+                    <a href="#"> ARMCHAIRS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="description">
+                <h4>WE RECOMMEND</h4>
+                <div class="wrap">
+                  <p>Fancy chair</p>
+                  Fancy chair Rutrum non id sem turpis elementum vel id. Magna.
+                </div>
+                <p>$1550.00</p>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="./imgs/table.svg" alt="table" />
+              <span
+                >TABLES
+                <svg
+                  width="12"
+                  height="13"
+                  viewBox="0 0 12 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.1338 5.41711L11.6924 5.97571C11.9209 6.22961 11.9209 6.61047 11.6924 6.83899L6.76663 11.7648C6.51273 12.0187 6.13187 12.0187 5.90335 11.7648L0.952179 6.83899C0.723663 6.61047 0.723663 6.20422 0.952179 5.97571L1.51077 5.41711C1.76468 5.16321 2.14554 5.1886 2.39944 5.41711L5.31937 8.48938V1.17688C5.31937 0.846802 5.57327 0.567505 5.92874 0.567505H6.74124C7.07132 0.567505 7.35062 0.846802 7.35062 1.17688V8.48938L10.2451 5.41711C10.4991 5.1886 10.8799 5.16321 11.1338 5.41711Z"
+                    fill="#0B3954"
+                  />
+                </svg>
+              </span>
+            </a>
+            <div class="dropdown">
+              <div class="links">
+                <ul>
+                  <li>
+                    <a href="#"> ARMCHAIRS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="description">
+                <h4>WE RECOMMEND</h4>
+                <div class="wrap">
+                  <p>Fancy chair</p>
+                  Fancy chair Rutrum non id sem turpis elementum vel id. Magna.
+                </div>
+                <p>$1550.00</p>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="./imgs/desk.svg.svg" alt="desk" />
+              <span
+                >DESKS
+                <svg
+                  width="12"
+                  height="13"
+                  viewBox="0 0 12 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.1338 5.41711L11.6924 5.97571C11.9209 6.22961 11.9209 6.61047 11.6924 6.83899L6.76663 11.7648C6.51273 12.0187 6.13187 12.0187 5.90335 11.7648L0.952179 6.83899C0.723663 6.61047 0.723663 6.20422 0.952179 5.97571L1.51077 5.41711C1.76468 5.16321 2.14554 5.1886 2.39944 5.41711L5.31937 8.48938V1.17688C5.31937 0.846802 5.57327 0.567505 5.92874 0.567505H6.74124C7.07132 0.567505 7.35062 0.846802 7.35062 1.17688V8.48938L10.2451 5.41711C10.4991 5.1886 10.8799 5.16321 11.1338 5.41711Z"
+                    fill="#0B3954"
+                  />
+                </svg>
+              </span>
+            </a>
+            <div class="dropdown">
+              <div class="links">
+                <ul>
+                  <li>
+                    <a href="#"> ARMCHAIRS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="description">
+                <h4>WE RECOMMEND</h4>
+                <div class="wrap">
+                  <p>Fancy chair</p>
+                  Fancy chair Rutrum non id sem turpis elementum vel id. Magna.
+                </div>
+                <p>$1550.00</p>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="./imgs/cabinet.svg.svg" alt="cabinet" />
+              <span
+                >CABINETS
+                <svg
+                  width="12"
+                  height="13"
+                  viewBox="0 0 12 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.1338 5.41711L11.6924 5.97571C11.9209 6.22961 11.9209 6.61047 11.6924 6.83899L6.76663 11.7648C6.51273 12.0187 6.13187 12.0187 5.90335 11.7648L0.952179 6.83899C0.723663 6.61047 0.723663 6.20422 0.952179 5.97571L1.51077 5.41711C1.76468 5.16321 2.14554 5.1886 2.39944 5.41711L5.31937 8.48938V1.17688C5.31937 0.846802 5.57327 0.567505 5.92874 0.567505H6.74124C7.07132 0.567505 7.35062 0.846802 7.35062 1.17688V8.48938L10.2451 5.41711C10.4991 5.1886 10.8799 5.16321 11.1338 5.41711Z"
+                    fill="#0B3954"
+                  />
+                </svg>
+              </span>
+            </a>
+            <div class="dropdown right">
+              <div class="links">
+                <ul>
+                  <li>
+                    <a href="#"> ARMCHAIRS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="description">
+                <h4>WE RECOMMEND</h4>
+                <div class="wrap">
+                  <p>Fancy chair</p>
+                  Fancy chair Rutrum non id sem turpis elementum vel id. Magna.
+                </div>
+                <p>$1550.00</p>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="imgs/lightning.svg" alt="light" />
+              <span
+                >LIGHTING
+                <svg
+                  width="12"
+                  height="13"
+                  viewBox="0 0 12 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.1338 5.41711L11.6924 5.97571C11.9209 6.22961 11.9209 6.61047 11.6924 6.83899L6.76663 11.7648C6.51273 12.0187 6.13187 12.0187 5.90335 11.7648L0.952179 6.83899C0.723663 6.61047 0.723663 6.20422 0.952179 5.97571L1.51077 5.41711C1.76468 5.16321 2.14554 5.1886 2.39944 5.41711L5.31937 8.48938V1.17688C5.31937 0.846802 5.57327 0.567505 5.92874 0.567505H6.74124C7.07132 0.567505 7.35062 0.846802 7.35062 1.17688V8.48938L10.2451 5.41711C10.4991 5.1886 10.8799 5.16321 11.1338 5.41711Z"
+                    fill="#0B3954"
+                  />
+                </svg>
+              </span>
+            </a>
+            <div class="dropdown right">
+              <div class="links">
+                <ul>
+                  <li>
+                    <a href="#"> ARMCHAIRS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                  <li>
+                    <a href="#"> BAR STOOLS </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="description">
+                <h4>WE RECOMMEND</h4>
+                <div class="wrap">
+                  <p>Fancy chair</p>
+                  Fancy chair Rutrum non id sem turpis elementum vel id. Magna.
+                </div>
+                <p>$1550.00</p>
+              </div>
+            </div>
+          </li>
+          <li class="highlighted">
+            <a href="#">
+              <img src="./imgs/star.svg" alt="sales" />
+              <span class="white">SALES</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section id="hero">
+        <div class="hero-wrap">
+          <div class="bg-img">
+            <img src="./imgs/rs-layer (1).svg" alt="Background" />
+          </div>
+          <div class="section-main-img">
+            <img src="./imgs/section-main-img.webp.svg" alt="Main image" />
+            <div class="text-content">
+              <p>BEFURNITURE</p>
+              <h1>
+                LUXURY <br />
+                FURNITURE
+              </h1>
+              <div class="btn-group">
+                <button class="btnyellow">GO TO SHOP</button>
+                <button class="btnwhite">SEE COLLECTION</button>
+              </div>
+            </div>
+            <!-- <div class="circles">
+              <div class="circle">+</div>
+              <div class="circle">+</div>
+              <div class="circle">+</div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <div class="second-container">
+        <section id="products-info">
+          <div class="searchfor">
+            <p>SEARCH FOR</p>
+
+            <div class="colored">
+              24000
+              <h2>PRODUCTS</h2>
+            </div>
+          </div>
+          <div class="product-detalis">
+            <div class="amount">
+              <span class="yellow-line"></span>
+              24000
+              <p>products</p>
+            </div>
+            <div class="year">
+              <span class="yellow-line"></span>
+              12
+              <p>years</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="products-type">
+          <div class="products-filter-section">
+            <div class="chair card">
+              <img src="./imgs/chair.svg" />
+              <h3>Chairs</h3>
+            </div>
+            <div class="bed card">
+              <img src="./imgs/bed.svg.svg" />
+              <h3>Beds</h3>
+            </div>
+            <div class="table card">
+              <img src="./imgs/table.svg" />
+
+              <h3>Desks</h3>
+            </div>
+            <div class="cabinet card">
+              <img src="./imgs/cabinet.svg.svg" />
+
+              <h3>Cabinets</h3>
+            </div>
+            <div class="light card">
+              <img src="./imgs/lightning.svg" />
+              <h3>Lighting</h3>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="third-container">
+        <section id="rooms">
+          <div class="room">
+            <img src="./imgs/bedroom.png" />
+            <div class="description">
+              <p>Time to</p>
+              <h4>BEDROOM</h4>
+            </div>
+          </div>
+          <div class="room">
+            <img src="./imgs/office.png" />
+            <div class="description">
+              <p>Time to</p>
+              <h4>OFFICE</h4>
+            </div>
+          </div>
+          <div class="room">
+            <img src="./imgs/kitchen.png" />
+            <div class="description">
+              <p>Time to</p>
+              <h4>KITCHEN</h4>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="second-section">
+        <section id="trends">
+          <img src="./imgs/brown-chair.svg" />
+          <div class="txt">
+            <div class="title">SEARCH FOR</div>
+            <h5>GET READY FOR A SPRING</h5>
+            <p>Metus ultricies curabitur sodales ipsum elit cubilia.</p>
+            <button>ACTUAL TRENDS</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

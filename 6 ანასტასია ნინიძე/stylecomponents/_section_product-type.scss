@@ -1,0 +1,32 @@
+section#products-type {
+  margin-bottom: 100px;
+
+  .products-filter-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .card {
+      cursor: pointer;
+      width: 179px;
+      height: 198px;
+      background-color: $color-light-grey;
+      padding: 30px 9px 30px 9px;
+      text-align: center;
+      border-radius: 32px;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+      h3 {
+        font-size: 20px;
+        color: $color-dark-blue;
+        padding-top: 20px;
+      }
+    }
+    .card:hover {
+      background-color: $color-white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: $hover-transition;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@use "./variables";
+
+
+@media (width < variables.$breakpoint-xl) {
+    .nav-item {
+        padding: 5px;
+    }
+
+}
+
+@media (width < variables.$breakpoint-lg) {
+    .products__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .logo-size {
+        padding-right: 0;
+    }
+
+    .nav-item {
+        padding: 0;
+    }
+
+    .product__types {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2fr;
+    }
+}
+
+@media (width < variables.$breakpoint-md) {
+    .nav-info {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .search-sm {
+        display: block;
+    }
+
+    .button-primary,
+    .button-seconday {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .hero-section {
+        padding: 0;
+
+        & .hero-background {
+            margin: 0 auto;
+            padding: 20px;
+            height: 120%;
+            width: 90%;
+            max-height: none;
+        }
+    }
+
+    .product__types {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2fr;
+    }
+
+    .product__type-wrapper {
+        padding: 20px 30px;
+    }
+}
+
+@media (width < variables.$breakpoint-sm) {
+
+    .ready__for__spring {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        &>div {
+            width: 100%;
+        }
+
+        & button {
+            padding: 15px 30px;
+        }
+    }
+
+    .hero-section {
+
+        & .hero-background {
+            margin: 0;
+            width: 100%;
+        }
+
+        .sub-header {
+            margin-bottom: 10px;
+        }
+
+        .heading-primary {
+            margin-bottom: 15px;
+        }
+
+        .button-primary {
+            padding: 10px;
+        }
+
+        .hero-wrapper .hero-background .button-secondary {
+            padding: 10px;
+            font-size: 12px;
+        }
+    }
+
+    .product__types {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 3fr;
+    }
+
+    .product__type-wrapper {
+        padding: 15px 20px;
+    }
+
+}

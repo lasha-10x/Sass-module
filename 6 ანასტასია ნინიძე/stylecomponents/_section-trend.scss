@@ -1,0 +1,35 @@
+.second-section {
+  width: $second-container-wth;
+  margin: $second-container-mar;
+  section#trends {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    .txt {
+      .title {
+        color: $color-dark-blue;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      h5 {
+        font-size: 48px;
+        color: $color-dark-blue;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+        color: $color-dark-grey;
+        margin-bottom: 30px;
+        max-width: 250px;
+      }
+      button {
+        @include button-three(14px, 80px, 15px 30px);
+      }
+      button:hover {
+        @include button-hover($color-dark-blue, $color-white);
+      }
+    }
+  }
+}

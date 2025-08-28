@@ -1,0 +1,36 @@
+@use "./variables";
+
+@use "./fonts";
+
+%button {
+    padding: 11px 30px;
+    transition: all 0.3s ease;
+    border-radius: 45px;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.button-primary {
+    @extend %button;
+    @extend %font-sora;
+    color: white;
+    background-color: variables.$color-orange-54;
+
+}
+
+.button-primary:hover {
+    color: variables.$color-orange-54;
+    background-color: white;
+}
+
+.button-secondary {
+    @extend %button;
+    @extend %font-sora;
+    color: variables.$color-orange-54;
+    background: white;
+}
+
+.button-secondary:hover {
+    background: variables.$color-orange-54;
+    color: white;
+}

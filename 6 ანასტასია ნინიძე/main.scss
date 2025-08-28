@@ -1,0 +1,19 @@
+@import "./stylecomponents/variables";
+@import "./stylecomponents/mixins";
+@import "./stylecomponents/header";
+@import "./stylecomponents/nav";
+@import "./stylecomponents/_section-hero";
+@import "./stylecomponents/_section-products-info";
+@import "./stylecomponents/section_product-type";
+@import "./stylecomponents/section-rooms";
+@import "./stylecomponents/section-trend";
+@import "./stylecomponents/hidden-login";
+@import "./stylecomponents/side-cart";
+@import "./stylecomponents/dropdown";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

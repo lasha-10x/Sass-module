@@ -1,0 +1,25 @@
+{
+  "name": "furniture-store",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/tsotne01/Furniture-store#readme",
+  "bugs": {
+    "url": "https://github.com/tsotne01/Furniture-store/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsotne01/Furniture-store.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass scss/main.scss css/main.css",
+    "compile":"sass scss/main.scss css/main.css --style compressed",
+    "watch": "sass --watch scss/main.scss css/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.88.0"
+  }
+}

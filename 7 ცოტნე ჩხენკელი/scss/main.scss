@@ -1,0 +1,17 @@
+@use "./variables";
+@use "./animation";
+@use "./reset";
+@use "./buttons";
+@use "./layout";
+@use "./colors";
+@use "./media";
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100dvh;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}

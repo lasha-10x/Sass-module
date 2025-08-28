@@ -1,0 +1,39 @@
+.hidden-side-cart-container {
+  width: 420px;
+  background-color: black;
+  height: 100vh;
+  padding-top: 30px;
+  display: none;
+
+  .heading {
+  }
+    .cross {
+      color: aliceblue;
+      font-size: 30px;
+    }
+  h5 {
+    color: $color-dark-blue;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+  }
+  .centr-txt {
+    p {
+      color: #e0e0e0;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 300px;
+    }
+  }
+  .total-section {
+    background-color: #f7f7f7;
+  }
+  .subtotal {
+    display: flex;
+    justify-content: space-between;
+  }
+  .total{
+      display: flex;
+  }
+}

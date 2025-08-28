@@ -1,0 +1,22 @@
+@mixin button-three(
+  $font-size: 14px,
+  $border-radius: 100px,
+  $padding: 11px 30px,
+  $bg-color: $color-orange,
+  $text-color: $color-white
+) {
+  font-size: $font-size;
+  border-radius: $border-radius;
+  padding: $padding;
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  cursor: pointer;
+  transition: $hover-transition;
+}
+@mixin button-hover($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  transition: $hover-transition;
+}

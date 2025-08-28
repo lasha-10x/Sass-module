@@ -1,0 +1,42 @@
+.third-container {
+  width: 1400px;
+  margin: auto;
+  margin-bottom: 100px;
+  section#rooms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    .room {
+      position: relative;
+
+      img {
+        width: 435px;
+        height: 600px;
+        border-radius: 32px;
+      }
+
+      .description {
+        position: absolute;
+        bottom: 100px;
+        left: 50px;
+
+        p {
+          font-size: 16px;
+          color: $color-white;
+        }
+        h4 {
+          font-size: 48px;
+          color: $color-white;
+          padding-top: 20px;
+          cursor: pointer;
+        }
+        h4:hover {
+          color: $color-orange;
+          transform: scale(1.05);
+          transition: $hover-transition;
+        }
+      }
+    }
+  }
+}

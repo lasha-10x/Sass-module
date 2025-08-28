@@ -1,0 +1,7 @@
+@use 'sass:math';
+$base-font-size: 16px;
+$scale-factor: 1.25;
+
+@function get-font-size($step: 0) {
+  @return math.round($base-font-size * pow($scale-factor, $step)) + px;
+}

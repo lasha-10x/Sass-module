@@ -1,0 +1,53 @@
+.hidden-login-container {
+  background-color: $color-white;
+  width: 250px;
+  height: 250px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 25%;
+  right: -360px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  &.show {
+    right: 10px;
+  }
+
+  h6 {
+    color: $color-dark-blue;
+    font-size: 26px;
+  }
+  input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 10px 20px 10px 10px;
+    border: 1px solid $color-orange;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  button {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: $color-white;
+    background-color: $color-orange;
+    border: none;
+    font-size: 16px;
+    padding: 10px 60px 10px 60px;
+    border-radius: 20px;
+  }
+  button:hover {
+    color: $color-white;
+    background-color: $color-dark-blue;
+    transition: $hover-transition;
+  }
+  p {
+    color: $color-dark-blue;
+    font-size: 14px;
+    padding-left: 18px;
+  }
+}
