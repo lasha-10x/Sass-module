@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: linear-gradient(180deg, #0b1024, #0f172a);
+  color: #e5e7eb;
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+.app {
+  max-width: 720px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+.app__header {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+}
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+form#new-todo-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+input[type="text"] {
+  background: #0b1226;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+input[type="text"]::placeholder {
+  color: #94a3b8;
+}
+input[type="text"]:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25);
+}
+.btn {
+  appearance: none;
+  border: 1px solid transparent;
+  background: #7c3aed;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.05s ease, border-color 0.2s ease,
+    color 0.2s ease;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn--primary {
+  background: linear-gradient(180deg, #7c3aed, #6d28d9);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.btn--ghost {
+  background: transparent;
+  color: #94a3b8;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.btn--ghost:hover {
+  color: #e5e7eb;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.app__controls {
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filters {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.25rem;
+  border-radius: 0.75rem;
+}
+.filter {
+  background: transparent;
+  color: #94a3b8;
+  border: 0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.filter.is-active {
+  color: #e5e7eb;
+  background: rgba(124, 58, 237, 0.18);
+}
+.app__list {
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+ul#todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.todo-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.75rem 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.todo-item:last-child {
+  border-bottom: 0;
+}
+.todo-toggle {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+.todo-title {
+  overflow-wrap: anywhere;
+}
+.todo-title.completed {
+  color: #94a3b8;
+  text-decoration: line-through;
+}
+.icon-btn {
+  background: transparent;
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.55rem;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.05s ease;
+}
+.icon-btn:hover {
+  color: #e5e7eb;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.icon-btn:active {
+  transform: translateY(1px);
+}
+.app__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  color: #94a3b8;
+}
+.counts strong {
+  color: #e5e7eb;
+}
+@media (max-width: 480px) {
+  .app {
+    margin: 2rem auto;
+  }
+  form#new-todo-form {
+    grid-template-columns: 1fr;
+  }
+}

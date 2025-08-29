@@ -1,0 +1,74 @@
+form#new-todo-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.75rem;
+  @include card();
+  padding: 0.75rem;
+}
+
+input[type="text"] {
+  background: #0b1226;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: $text;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  &::placeholder {
+    color: $muted;
+  }
+  &:focus {
+    @include focus-ring($primary, 0.25);
+  }
+}
+
+ul#todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.75rem 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.todo-item:last-child {
+  border-bottom: 0;
+}
+
+.todo-toggle {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.todo-title {
+  overflow-wrap: anywhere;
+}
+
+.todo-title.completed {
+  color: $muted;
+  text-decoration: line-through;
+}
+
+.icon-btn {
+  background: transparent;
+  color: $muted;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.55rem;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.05s ease;
+  &:hover {
+    color: $text;
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
