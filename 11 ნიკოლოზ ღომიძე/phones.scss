@@ -1,0 +1,22 @@
+@import  'mixins';
+@media (max-width: 390px){
+    body{
+        header{
+            #input-nav{
+               @include center();
+               gap: 1rem;
+               #nav-items-img {
+                display: none !important;
+               }
+               #nav-search{
+                display: none !important;
+               }
+               #sidebar-btn{
+                
+               }
+               
+            }
+
+        }
+    }
+}
