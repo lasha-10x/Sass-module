@@ -1,0 +1,11 @@
+@function hero-spacing($element){
+    @if $element=='blue-background'{
+     @return 30px 96px;
+    }@else if $element=='furniture-image'{
+     @return 68px 370px;
+    }
+    @else{
+        @return 0;
+    }
+
+}

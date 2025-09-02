@@ -1,0 +1,47 @@
+@use '../modules/mixins' as *;
+@use '../modules/functions' as *;
+
+.hero{
+@include flex-center;
+width:100%;
+max-width: 1920px;
+height:100vh;
+position: relative;
+
+
+.hero-images{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    #black-background{
+    position: absolute;
+    z-index: 1;
+    width:100%;
+    height: 100%;
+    }
+    #blue-background{
+       position:absolute;
+       width:100%;
+       height: 100%;
+        z-index: 2;
+        margin: hero-spacing('blue-background');
+        background-color: black;
+    }
+    #furniture-image{
+        position: absolute;
+        width:100%;
+        height: 100%;
+        z-index: 3;
+        margin : hero-spacing('furniture-image');
+        border-radius: 32px;
+    }
+}
+.hero-content{
+    position: relative;
+    z-index: 4;
+    text-align:center;
+}
+
+}

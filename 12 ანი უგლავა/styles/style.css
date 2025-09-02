@@ -1,0 +1,105 @@
+.container {
+  width: 100%;
+  max-width: 1220px;
+}
+
+.upper-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.upper-navigation > img {
+  height: 43px;
+}
+.upper-navigation .search {
+  border-radius: 6px;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  width: 610px;
+}
+.upper-navigation .search input {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+.upper-navigation .icon-conntainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.upper-navigation .icon-conntainer img {
+  height: 20px;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 6px;
+}
+.navigation-bar .navigation-item {
+  padding: 8px 50px;
+}
+.navigation-bar a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+.navigation-bar a p {
+  font-size: 14px;
+  color: #0B3954;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+  position: relative;
+}
+.hero .hero-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero .hero-images #black-background {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.hero .hero-images #blue-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  margin: 30px 96px;
+  background-color: black;
+}
+.hero .hero-images #furniture-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  margin: 68px 370px;
+  border-radius: 32px;
+}
+.hero .hero-content {
+  position: relative;
+  z-index: 4;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */
