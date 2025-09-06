@@ -1,0 +1,103 @@
+@import 'variables';
+
+// Hero
+.hero {
+  background: $hero-gradient;
+  background-image: url(/images/hero-image.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+  margin: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: default;
+
+  .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+    .hero-content {
+      padding: 3rem;
+
+      .hero-text {
+        flex: 1;
+        color: white;
+        
+
+        .hero-subtitle {  
+          letter-spacing: 0.1em;
+          margin-bottom: 1rem;
+          color: #FFFFFF;
+        }
+
+        .hero-title {
+          font-size: 4rem;
+          font-weight: 700;
+          line-height: 1.1;
+          margin-bottom: 2rem;
+          color: #FFFFFF;
+        }
+
+        .hero-buttons {
+          display: flex;
+          gap: 1rem;
+
+          .btn-primary {
+            background: $sales-gradient;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+
+            &:hover {
+              transform: translateY(-2px);
+              background: white;
+              color: $hover-color;
+            }
+          }
+
+          .btn-secondary {
+            background: white;
+            color: #FFB128;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+
+            &:hover {
+              transform: translateY(-2px);
+              background: $hover-color;
+              color: white;
+              
+            }
+          }
+        }
+      }
+
+      .hero-image {
+        flex: 1;
+        margin-left: 2rem;
+
+        img {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}

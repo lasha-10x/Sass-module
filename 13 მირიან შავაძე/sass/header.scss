@@ -1,0 +1,148 @@
+@import 'variables';
+
+.header {
+  background: $header-bg;
+  box-shadow: $header-shadow;
+
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo { img { width: 250px; } }
+
+    .search-container {
+      flex: 1;
+      max-width: 400px;
+      margin: 0 2rem;
+      position: relative;
+
+      .search-icon { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); }
+
+      .search-input {
+        width: 100%;
+        padding: 0.75rem 1rem 0.75rem 3rem;
+        border: 1px solid $search-border;
+        border-radius: 0.5rem;
+        font-size: 0.875rem;
+        color: $text-color;
+        background: $search-bg;
+
+        &::placeholder { color: $placeholder-color; }
+      }
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      cursor: pointer;
+
+      .cart {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        position: relative;
+
+        .cart-count {
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          background: $cart-bg;
+          color: white;
+          font-size: 0.75rem;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .cart-price { font-weight: 600; color: $cart-bg; }
+      .user-icon svg { stroke: $text-color; }
+    }
+  }
+
+  .navigation {
+    border-top: 1px solid $search-border;
+    background: $header-bg;
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .nav-items {
+        display: flex;
+        gap: 6rem;
+
+        .nav-item {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 1rem 0;
+          cursor: pointer;
+          color: $text-color;
+          font-size: 0.875rem;
+          font-weight: 500;
+          transition: color 0.2s;
+
+          span { margin-top: 0.25rem; }
+
+          &:hover { color: $hover-color; .dropdown { display: block; } }
+
+          .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: $dropdown-bg;
+            padding: 0.5rem 0;
+            border-radius: 0.5rem;
+            box-shadow: $dropdown-shadow;
+            min-width: 150px;
+            z-index: 10;
+
+            a {
+              display: block;
+              padding: 0.5rem 1rem;
+              color: #0B3954;
+              text-decoration: none;
+              font-size: 0.875rem;
+
+              &:hover { background: #f3f4f6; }
+            }
+          }
+        }
+      }
+
+      .sales-button {
+        background: $sales-gradient;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        transition: transform 0.2s, background 0.5s ease;
+
+        &:hover { transform: translateY(-1px); background: #0B3954; }
+      }
+    }
+  }
+}
